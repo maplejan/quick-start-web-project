@@ -1,0 +1,19 @@
+@mixin backgroundIcon ($url, $size, $position: center center, $repeat: no-repeat) {
+  background-image: url($url);
+  background-size: $size;
+  background-position: $position;
+  background-repeat: $repeat;
+}
+
+@mixin textOverflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin appearance($type: none) {
+  -webkit-appearance: $type;
+  -moz-appearance: $type;
+  -ms-appearance: $type;
+  appearance: $type;
+}
